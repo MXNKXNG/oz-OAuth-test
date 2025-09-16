@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section style="width: 200px">
+      <h2 style="text-align: center">naver OAuth</h2>
+      <button style="width: 200px; height: 50px" id="login_btn">
+        네이버 계정 로그인
+      </button>
+      <main
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          padding: 24px 0;
+        "
+      >
+        <img
+          id="user_image"
+          style="background-color: lightgray; border-radius: 50%"
+          width="100"
+          height="100"
+        />
+        <div>유저 이름: <span id="user_name"></span></div>
+        <button
+          style="width: 200px; height: 50px; margin: 12px 0"
+          id="logout_btn"
+        >
+          로그아웃
+        </button>
+      </main>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
